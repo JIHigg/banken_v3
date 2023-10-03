@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonHantera"
+        android:layout_width="136dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/order_card"
+        android:textColor="@color/dark_blue_2"
+        android:textStyle="bold"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDisplay"
+        android:layout_width="246dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="82dp"
+        android:text="@string/account_bal"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/buttonTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="132dp"
+        android:text="@string/menu_transfer"
+        android:textColor="@color/dark_blue_2"
+        android:textStyle="bold"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="85dp"
+        android:text="Konto: "
+        android:textColor="@color/dark_blue_1"
+        android:background="@color/gold"
+        android:textStyle="bold"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDisplay"
+        app:layout_constraintStart_toStartOf="@+id/buttonDisplay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

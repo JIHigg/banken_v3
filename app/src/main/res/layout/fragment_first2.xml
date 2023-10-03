@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".First2Fragment" >
+
+    <Button
+        android:id="@+id/buttonSize2"
+        android:layout_width="201dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/contact_oss"
+        android:textColor="@color/dark_blue_2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSize" />
+
+    <Button
+        android:id="@+id/buttonLang"
+        android:layout_width="298dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+
+        android:text="@string/language_menu"
+        android:textAlignment="viewStart"
+        android:textColor="@color/dark_blue_2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSize"
+        android:layout_width="201dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/text_size"
+        android:textColor="@color/dark_blue_2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLang" />
+
+    <TextView
+        android:id="@+id/textViewSv"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="44dp"
+        android:text="@string/lang_options"
+        android:textAlignment="center"
+        android:background="@color/gold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLang"
+        app:layout_constraintTop_toTopOf="@+id/buttonLang" />
+</androidx.constraintlayout.widget.ConstraintLayout>
